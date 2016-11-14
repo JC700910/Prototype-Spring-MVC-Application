@@ -34,7 +34,7 @@ public class AppConfig extends WebMvcConfigurerAdapter {
     }
     
     @Bean
-    public DataSourceObject dataSource()   {
+    public DataSourceObject dataSourceObject()   {
         
         DataSourceObject dataSourceObject = new DataSourceObject();
         
