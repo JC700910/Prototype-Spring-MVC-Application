@@ -1,3 +1,4 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -6,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Login</title>
 
     <!-- Bootstrap -->
     <link href="/resources/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
@@ -23,7 +24,7 @@
     <div class="container">
 
       
- <form:form id="loginForm" method="post" action="login" modelAttribute="loginBean"> 
+ <form:form id="loginForm" method="post" action="login" modelAttribute="loginBean">   
 
 
             <form:label path="username">Enter your user-name</form:label> 

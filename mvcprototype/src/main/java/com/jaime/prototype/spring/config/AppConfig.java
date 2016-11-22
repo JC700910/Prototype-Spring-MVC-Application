@@ -15,6 +15,11 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 import com.jaime.prototype.dao.DataSourceObject;
+import com.jaime.prototype.dao.UserDao;
+import com.jaime.prototype.dao.impl.UserDaoImpl;
+import com.jaime.prototype.domain.LoginDelegate;
+import com.jaime.prototype.service.UserService;
+import com.jaime.prototype.service.impl.UserServiceImpl;
 
 
 @Configuration
@@ -51,7 +56,27 @@ public class AppConfig extends WebMvcConfigurerAdapter {
         return dataSourceObject;
     }
 
+    @Bean
+    public LoginDelegate loginDelegate() {
+        
+        LoginDelegate loginDelegate = new LoginDelegate();
+        
+        return loginDelegate;
+    }
     
+    @Bean UserService userService() {
+        
+        UserService userService = new UserServiceImpl();
+        
+        return userService;
+    }
+    
+    @Bean UserDao userDao() {
+        
+        UserDao userDao = new UserDaoImpl();
+        
+        return userDao;
+    }
    
 
     @Override
