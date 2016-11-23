@@ -28,15 +28,15 @@
             <h2 class="form-signin-heading">Please sign in</h2>
 
  
-            <form:label path="username" cssClass="sr-only" for="username">Enter your user-name</form:label> 
+            <form:label path="username" cssClass="sr-only" for="username" >Enter your user-name</form:label> 
 
 
-            <form:input id="username" name="username" path="username" cssClass="form-control" placeholder="Email address" />
+            <form:input id="username" name="username" path="username" cssClass="form-control" placeholder="Email address" required="required" autofocus="autofocus"/>
 
 
            <form:label path="username" cssClass="sr-only" for="password" placeholder="Password"  >Please enter your password</form:label> 
 
-            <form:password id="password" name="password" path="password" cssClass="form-control" placeholder="Password"/><br>   
+            <form:password id="password" name="password" path="password" cssClass="form-control" placeholder="Password" required="required"/><br>   
  
             <input type="submit" class="btn btn-lg btn-primary btn-block" value="Sign in" /> 
  
